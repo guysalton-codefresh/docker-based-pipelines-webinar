@@ -2,7 +2,7 @@ version: '1.0'
 steps:
   FindTensorFlowDetails:
     title: Quering Bintray
-    image:  r.cfcr.io/guysaltoncf/my-jfrog-plugin:master
+    image: r.cfcr.io/guysaltoncf/my-jfrog-plugin:master
     environment:
       - BINTRAY_PACKAGE=google/tensorflow/tensorflow
   PackageMyNodeApp:
