@@ -2,7 +2,7 @@ version: '1.0'
 steps:
   FindTensorFlowDetails:
     title: Quering Bintray
-    image:  r.cfcr.io/kostis-codefresh/my-jfrog-plugin:master
+    image:  r.cfcr.io/guysaltoncf/my-jfrog-plugin:master
     environment:
       - BINTRAY_PACKAGE=google/tensorflow/tensorflow
   PackageMyNodeApp:
@@ -11,5 +11,3 @@ steps:
     working_directory: ./06_plugin/nest_example
     commands:
       - npm install
-  
- 
