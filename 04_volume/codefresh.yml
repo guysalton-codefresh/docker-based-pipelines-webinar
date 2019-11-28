@@ -11,12 +11,14 @@ steps:
     image: node:9
     working_directory: ./04_volume/nest_example
     commands:
+      - cf_export VAR1=VALUE
       - npm install
   RunMyTests:
     title: Running unit tests
     image: node:9
     working_directory: ./04_volume/nest_example
     commands:
+      - echo $VAR1
       - pwd
       - ls -ldF node_modules
       - npm test
