@@ -12,6 +12,7 @@ steps:
     working_directory: ./04_volume/nest_example
     commands:
       - cf_export VAR1=VALUE
+      - cf_export VAR1=VALUE2
       - npm install
   RunMyTests:
     title: Running unit tests
