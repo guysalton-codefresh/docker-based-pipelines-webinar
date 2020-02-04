@@ -13,11 +13,6 @@ steps:
     commands:
       - cf_export VAR1=VALUE
       - npm install
-  ExportVars:
-    title: export env var again
-    image: node:9
-    commands:
-      - cf_export VAR1=VALUE2
   RunMyTests:
     title: Running unit tests
     image: node:9
